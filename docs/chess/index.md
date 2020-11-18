@@ -3,12 +3,18 @@
 title: Chess score
 
 ---
+<!-- KATEX math rendering -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js"></script>
+
+<!-- VUE -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
 # Chess
 
-Last attempt
+Calculates updated chess ratings using the ELO calculation.
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 {% raw %}
 <div id="app-chess">
   <input type="number" v-model="s1" v-on:input="calculate_scores"/>
@@ -26,6 +32,8 @@ Last attempt
 </div>
 
 {% endraw %}
+
+<p>$$E=mc^2$$</p>
 
 <script>
 
@@ -67,4 +75,8 @@ var chess_score = new Vue ({
 })
 
 
+</script>
+
+<script>
+        renderMathInElement(document.body);
 </script>
