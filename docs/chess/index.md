@@ -1,3 +1,4 @@
+{% include raw.html %}
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
 <div id="app-chess">
