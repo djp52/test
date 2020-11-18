@@ -3,10 +3,6 @@
 title: Chess score
 
 ---
-<!-- KATEX math rendering -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js"></script>
 
 <!-- VUE -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
