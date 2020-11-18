@@ -5,5 +5,5 @@ title: Chess score
 ---
 
 # Chess
-{% include raw.html %}
+{% include_relative  raw.html %}
 
