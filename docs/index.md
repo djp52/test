@@ -3,7 +3,7 @@
 Test.
 
 
--  [Chess](./chess.html)
+-  [Chess](./chess/)
 
 <div id="text"></div>
  
