@@ -9,7 +9,7 @@ title: Chess score
 Last attempt
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<% raw %>
+{% raw %}
 <div id="app-chess">
   <input type="number" v-model="s1" v-on:input="calculate_scores"/>
   <input type="number" v-model="s2" v-on:input="calculate_scores"/>
@@ -25,7 +25,7 @@ Last attempt
   
 </div>
 
-<% endraw %>
+{% endraw %}
 
 <script>
 
