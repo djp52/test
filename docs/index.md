@@ -2,6 +2,9 @@
 
 Test.
 
+
+-  [Chess](./chess.html)
+
 <div id="text"></div>
  
 <script>
