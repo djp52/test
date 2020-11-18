@@ -1,20 +1,21 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-
+<% raw %>
 <div id="app-chess">
   <input type="number" v-model="s1" v-on:input="calculate_scores"/>
   <input type="number" v-model="s2" v-on:input="calculate_scores"/>
   <input type="number" v-model="K" v-on:input="calculate_scores"/>
   
-  <p>E<sub>A</sub> = {{{ 100 * Ea.toFixed(2) }}}%</p>
+  <p>E<sub>A</sub> = {{ 100 * Ea.toFixed(2) }}%</p>
   <table>
       <tr><th>Result</th><th>Change</th><th>New Score</th></tr>
-      <tr><td>Win</td><td>{{{ dwin.toFixed(0) }}}</td><td>{{{ twin.toFixed(0) }}}</td></tr>
-      <tr><td>Draw</td><td>{{{ ddraw.toFixed(0) }}}</td><td>{{{ tdraw.toFixed(0) }}}</td></tr>
-      <tr><td>Lose</td><td>{{{ dlose.toFixed(0) }}}</td><td>{{{ tlose.toFixed(0) }}}</td></tr>
+      <tr><td>Win</td><td>{{ dwin.toFixed(0) }}</td><td>{{ twin.toFixed(0) }}</td></tr>
+      <tr><td>Draw</td><td>{{ ddraw.toFixed(0) }}</td><td>{{ tdraw.toFixed(0) }}</td></tr>
+      <tr><td>Lose</td><td>{{ dlose.toFixed(0) }}</td><td>{{ tlose.toFixed(0) }}</td></tr>
   </table>
   
 </div>
 
+<% endraw %>
 <script>
 
 var chess_score = new Vue ({
