@@ -32,9 +32,14 @@ Calculates updated chess ratings using the ELO calculation.
 </div>
 
 {% endraw %}
+<div>
+The following equations from [here](https://en.wikipedia.org/wiki/Elo_rating_system) are used</p>
 
-<p>$$E=mc^2$$</p>
+{% raw %}
+<p>$$E_A = \frac{1}{1 + 10^{(R_A - R_B)/400}}$$</p>
+<p>$$ R_A^\prime=R_A+K(S_A-E_A $$</p>
 
+{% endraw %}
 <script>
 
 var chess_score = new Vue ({
