@@ -30,6 +30,7 @@ title: Maths Challenge
     <button style="color:lightgreen" v-on:click="check_answer">✓</button></p>
     <p><button style="color:lightskyblue" v-on:click="n">Next Question</button></p>
     <p>{{ message }}</p>
+    <p style="font-size:large">You have {{ correct }} answers right</p>
 </div>
 
 {% endraw %}
@@ -53,7 +54,8 @@ var maths = new Vue ({
       x2 : 1,
       message : "Type and answer and press ✓",
       dis : true,
-      symbol : "+"
+      symbol : "+",
+      correct : 0
     },
     methods : {
       d : function () { this.myAnswer = this.myAnswer.slice(0, -1); },
@@ -61,6 +63,7 @@ var maths = new Vue ({
       check_answer : function () {
           if (this.answer == parseInt(this.myAnswer, null)) {   
               this.message = "Correct";
+              this.correct = this.correct + 1;
               this.dis = false;
               }
           else{
