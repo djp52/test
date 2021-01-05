@@ -14,8 +14,8 @@ title: Maths Challenge
 <div id="app-maths">
 
     <p>Maths</p>
-    {{x1}} {{symbol}} {{x2}}</p>
-    <input type="string" v-model="myAnswer" disabled="true"/><br/>
+    <p>{{x1}} {{symbol}} {{x2}}</p>
+    <p><input type="string" v-model="myAnswer" disabled="true"/></p>
     <p><button v-on:click="myAnswer += '1'">1</button>
     <button v-on:click="myAnswer += '2'">2</button>
     <button v-on:click="myAnswer += '3'">3</button></p>
@@ -28,7 +28,7 @@ title: Maths Challenge
     <p><button style="color:lightcoral;" v-on:click="d">Del</button>
     <button v-on:click="myAnswer += '0'">0</button>
     <button style="color:lightgreen" v-on:click="check_answer">✓</button></p>
-    <button :disabled="dis == true" style="color:lightskyblue" v-on:click="n">Next Question</button></p>
+    <p><button :disabled="!!dis" style="color:lightskyblue" v-on:click="n">Next Question</button></p>
     <p>{{ message }}</p>
 </div>
 
