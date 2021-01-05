@@ -11,7 +11,7 @@ title: Maths Challenge
 
 
 {% raw %}
-<div id="app-maths">
+<div id="app-maths" style="font-size:xx-large">
 
     <p>Maths</p>
     <p>{{x1}} {{symbol}} {{x2}}</p>
