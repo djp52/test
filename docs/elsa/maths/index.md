@@ -28,7 +28,7 @@ title: Maths Challenge
     <p><button style="color:lightcoral;" v-on:click="d">Del</button>
     <button v-on:click="myAnswer += '0'">0</button>
     <button style="color:lightgreen" v-on:click="check_answer">✓</button></p>
-    <p><button style="color:lightskyblue" v-on:click="n" :disabled="!!dis">Next Question</button></p>
+    <p><button style="color:lightskyblue" v-on:click="n">Next Question</button></p>
     <p>{{ message }}</p>
 </div>
 
