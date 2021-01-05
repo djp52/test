@@ -1,6 +1,6 @@
 ---
 
-title: Chess score
+title: Maths Challenge
 
 ---
 
@@ -28,7 +28,7 @@ title: Chess score
     <button style="color:lightcoral;" v-on:click="d">Del</button>
     <button v-on:click="myAnswer += '0'">0</button>
     <button style="color:lightgreen" v-on:click="check_answer">✓</button><br/>
-    <button :disabled="!!dis" style="color:lightskyblue" v-on:click="n">Next Question</button>
+    {% raw %}<button :disabled="!!dis" style="color:lightskyblue" v-on:click="n">Next Question</button>{% endraw %}
     <p>{{ message }}</p>
 </div>
 
