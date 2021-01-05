@@ -14,21 +14,21 @@ title: Maths Challenge
 <div id="app-maths">
 
     <p>Maths</p>
-    <p>{{x1}} {{symbol}} {{x2}}</p>
+    {{x1}} {{symbol}} {{x2}}</p>
     <input type="string" v-model="myAnswer" disabled="true"/><br/>
-    <button v-on:click="myAnswer += '1'">1</button>
+    <p><button v-on:click="myAnswer += '1'">1</button>
     <button v-on:click="myAnswer += '2'">2</button>
-    <button v-on:click="myAnswer += '3'">3</button><br/>
-    <button v-on:click="myAnswer += '4'">4</button>
+    <button v-on:click="myAnswer += '3'">3</button></p>
+    <p><button v-on:click="myAnswer += '4'">4</button>
     <button v-on:click="myAnswer += '5'">5</button>
-    <button v-on:click="myAnswer += '6'">6</button><br/>
-    <button v-on:click="myAnswer += '7'">7</button>
+    <button v-on:click="myAnswer += '6'">6</button></p>
+    <p><button v-on:click="myAnswer += '7'">7</button>
     <button v-on:click="myAnswer += '8'">8</button>
-    <button v-on:click="myAnswer += '9'">9</button><br/>
-    <button style="color:lightcoral;" v-on:click="d">Del</button>
+    <button v-on:click="myAnswer += '9'">9</button></p>
+    <p><button style="color:lightcoral;" v-on:click="d">Del</button>
     <button v-on:click="myAnswer += '0'">0</button>
-    <button style="color:lightgreen" v-on:click="check_answer">✓</button><br/>
-    {% raw %}<button :disabled="!!dis" style="color:lightskyblue" v-on:click="n">Next Question</button>{% endraw %}
+    <button style="color:lightgreen" v-on:click="check_answer">✓</button></p>
+    <button :disabled="dis == true" style="color:lightskyblue" v-on:click="n">Next Question</button></p>
     <p>{{ message }}</p>
 </div>
 
