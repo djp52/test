@@ -16,18 +16,18 @@ title: Maths Challenge
     <p>Maths</p>
     <p>{{x1}} {{symbol}} {{x2}}</p>
     <p><input type="string" v-model="myAnswer" disabled="true"/></p>
-    <p><button v-on:click="myAnswer += '1'">1</button>
-    <button v-on:click="myAnswer += '2'">2</button>
-    <button v-on:click="myAnswer += '3'">3</button></p>
-    <p><button v-on:click="myAnswer += '4'">4</button>
-    <button v-on:click="myAnswer += '5'">5</button>
-    <button v-on:click="myAnswer += '6'">6</button></p>
-    <p><button v-on:click="myAnswer += '7'">7</button>
-    <button v-on:click="myAnswer += '8'">8</button>
-    <button v-on:click="myAnswer += '9'">9</button></p>
-    <p><button style="color:lightcoral;" v-on:click="d">⌫</button>
-    <button v-on:click="myAnswer += '0'">0</button>
-    <button style="color:lightgreen" v-on:click="check_answer">✓</button></p>
+    <p><button v-on:click="myAnswer += '1'"><span style="width:3em;text-align:center">1</span></button>
+    <button v-on:click="myAnswer += '2'"><span style="width:3em;text-align:center">2</span></button>
+    <button v-on:click="myAnswer += '3'"><span style="width:3em;text-align:center">3</span></button></p>
+    <p><button v-on:click="myAnswer += '4'"><span style="width:3em;text-align:center">4</span></button>
+    <button v-on:click="myAnswer += '5'"><span style="width:3em;text-align:center">5</span></button>
+    <button v-on:click="myAnswer += '6'"><span style="width:3em;text-align:center">6</span></button></p>
+    <p><button v-on:click="myAnswer += '7'"><span style="width:3em;text-align:center">7</span></button>
+    <button v-on:click="myAnswer += '8'"><span style="width:3em;text-align:center">8</span></button>
+    <button v-on:click="myAnswer += '9'"><span style="width:3em;text-align:center">9</span></button></p>
+    <p><button style="color:lightcoral;" v-on:click="d"><span style="width:3em;text-align:center">⌫</span></button>
+    <button v-on:click="myAnswer += '0'"><span style="width:3em;text-align:center">0</span></button>
+    <button style="color:lightgreen" v-on:click="check_answer"><span style="width:3em;text-align:center">✓</span></button></p>
     <p><button style="color:lightskyblue" v-on:click="n">Next Question</button></p>
     <p>{{ message }}</p>
     <p style="font-size:large">You have {{ correct }} answers right</p>
