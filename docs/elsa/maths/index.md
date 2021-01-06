@@ -47,7 +47,7 @@ var maths = new Vue ({
       myAnswer : "",
       answer : 2,
       n_min : 1,
-      n_max : 12,
+      n_max : 25,
       t_min : 1,
       t_max : 7,
       x1 : 1,
@@ -91,7 +91,7 @@ var maths = new Vue ({
               break;
            case 1:
               // Subtract
-              this.x1 = Math.floor(Math.random() * (this.n_max - this.n_min)) + this.n_min;
+              this.x1 = Math.floor(Math.random() * (2*this.n_max - this.n_min)) + this.n_min;
               this.x2 = Math.floor(Math.random() * (this.x1 - this.n_min)) + this.n_min;
               this.symbol = "-";
               this.answer = this.x1 - this.x2;
